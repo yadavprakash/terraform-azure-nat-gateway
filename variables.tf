@@ -1,6 +1,6 @@
 variable "repository" {
   type        = string
-  default     = "opsstation"
+  default     = "ng"
   description = "Terraform current module repo"
 }
 
@@ -13,7 +13,7 @@ variable "label_order" {
 variable "managedby" {
   type        = string
   default     = ""
-  description = "ManagedBy, eg 'opsstation'."
+  description = "ManagedBy, eg 'yadavprakash'."
 }
 
 variable "location" {

@@ -23,7 +23,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 ```hcl
 module "nat_gateway" {
   depends_on          = [module.resource_group, module.vnet]
-  source              = "git::https://github.com/opsstation/terraform-azure-nat-gateway.git?ref=v1.0.0"
+  source              = "git::https://github.com/yadavprakash/terraform-azure-nat-gateway.git?ref=v1.0.0"
   name                = "app"
   environment         = "test"
   location            = module.resource_group.resource_group_location
@@ -34,14 +34,14 @@ module "nat_gateway" {
 This example demonstrates how to create various AZURE resources using the provided modules. Adjust the input values to suit your specific requirements.
 
 # Examples
-For detailed examples on how to use this module, please refer to the [example](https://github.com/opsstation/terraform-azure-nat-gateway/blob/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [example](https://github.com/yadavprakash/terraform-azure-nat-gateway/blob/master/_example) directory within this repository.
 
 # License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/opsstation/terraform-azure-nat-gateway/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/yadavprakash/terraform-azure-nat-gateway/blob/master/LICENSE) file for more details.
 
 # Authors
 Your Name
-Replace **MIT** and **OpsStation** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **MIT** and **yadavprakash** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -61,7 +61,7 @@ Replace **MIT** and **OpsStation** with the appropriate license and your informa
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-azure-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/yadavprakash/terraform-azure-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -84,12 +84,12 @@ Replace **MIT** and **OpsStation** with the appropriate license and your informa
 | <a name="input_environment"></a> [environment](#input\_environment) | Project environment | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. sequence of application name and environment `name`,`environment`,'attribute' [`webserver`,`qa`,`devops`,`public`,] . | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
 | <a name="input_location"></a> [location](#input\_location) | Azure region to use | `string` | `""` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'opsstation'. | `string` | `""` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'yadavprakash'. | `string` | `""` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_nat_gateway_idle_timeout"></a> [nat\_gateway\_idle\_timeout](#input\_nat\_gateway\_idle\_timeout) | Idle timeout configuration in minutes for Nat Gateway | `number` | `4` | no |
 | <a name="input_public_ip_ids"></a> [public\_ip\_ids](#input\_public\_ip\_ids) | List of public ips to use. Create one ip if not provided | `list(string)` | `[]` | no |
 | <a name="input_public_ip_zones"></a> [public\_ip\_zones](#input\_public\_ip\_zones) | Public ip Zones to configure. | `list(string)` | `null` | no |
-| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"opsstation"` | no |
+| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"yadavprakash"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of the resource group to use | `string` | `""` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | Ids of subnets to associate with the Nat Gateway | `string` | `""` | no |
 
