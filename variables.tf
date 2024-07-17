@@ -1,6 +1,6 @@
 variable "repository" {
   type        = string
-  default     = "ng"
+  default     = "yadavprakash"
   description = "Terraform current module repo"
 }
 
